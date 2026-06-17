@@ -1,0 +1,10 @@
+respondent_id,arm,item1,item2_R,item3,item4_perception,item5_belief,guess_2017,guess_2023,manip_check,age_bracket,gender,country,lived_in_india,education
+A01,A,3,4,3,b,70,,,,25-34,Male,India,Yes,Undergraduate
+A02,A,5,5,5,c,60,,,,35-44,Female,India,Yes,Bachelors
+A03,A,5,1,4,c,75,,,,45-54,Female,India,Yes,PhD
+B01,B,4,4,3,c,50,,,50,35-44,Male,India,Yes,Undergraduate
+B02,B,4,5,5,c,50,,,40,35-44,Female,India,Yes,Bachelors
+B03,B,5,3,3,b,55,,,40,35-44,Male,India,Yes,Bachelors
+C01,C,4,3,3,b,40,10,30,40,35-44,Male,India,Yes,Masters
+C02,C,5,2,5,b,45,15,30,40,35-44,Female,India,Yes,Undergraduate
+C03,C,4,4,4,c,60,30,35,45,45-54,Male,India,Yes,Bachelors

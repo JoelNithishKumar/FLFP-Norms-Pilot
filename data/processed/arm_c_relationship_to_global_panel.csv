@@ -1,0 +1,4 @@
+"respondent_id","arm","item1","item2_R","item3","item4_perception","item5_belief","guess_2017","guess_2023","manip_check","age_bracket","gender","country","lived_in_india","education","item2_reversed","primary_index","secondary_norm","misperception_gap","guess_percentile_global"
+"C01","C",4,3,3,"b",40,10,30,40,"35-44","Male","India","Yes","Masters",3,3.5,3,1.24,10.4
+"C02","C",5,2,5,"b",45,15,30,40,"35-44","Female","India","Yes","Undergraduate",4,5,4,1.24,10.4
+"C03","C",4,4,4,"c",60,30,35,45,"45-54","Male","India","Yes","Bachelors",2,4,2,-3.76,13.1
