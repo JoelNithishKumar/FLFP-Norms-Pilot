@@ -8,29 +8,29 @@
 
 India's female labor force participation rate (FLFPR) has risen sharply in recent years, following a long period of stagnation and decline (Andres et al. 2017; Chatterjee, Murgai, and Rama 2015). Yet there is little evidence on whether this shift is widely recognized outside specialist circles. The gap between a measurable economic change and what people believe about it is the subject of this study.
 
-The study combines two components. First, a small original pilot experiment (N=9) testing whether providing accurate information about India's FLFPR growth shifts respondents' stated support for women's labor force participation, their perceptions of social norms, and their beliefs about whether the trend will continue. Second, a descriptive analysis of a 181-country panel spanning 1990–2025, used to establish what would otherwise be an unsupported premise: that there is something real and unusual to be misperceived in the first place. A claim that people "misperceive" a statistic is only meaningful once that statistic's actual behavior — relative to some defensible benchmark — has been established. This piece treats that benchmarking exercise as a primary part of the analysis, not as a preliminary aside.
+The study combines two components. First, a small original pilot experiment (N=9) testing whether providing accurate information about India's FLFPR growth shifts respondents' stated support for women's labor force participation, their perceptions of social norms, and their beliefs about whether the trend will continue. Second, a descriptive analysis of a 181-country panel spanning 1990–2025, used to establish what would otherwise be an unsupported premise: that there is something real and unusual to be misperceived in the first place. A claim that people "misperceive" a statistic is only meaningful once that statistic's actual behavior relative to some defensible benchmark has been established. This piece treats that benchmarking exercise as a primary part of the analysis, not as a preliminary aside.
 
 ## Research question
 
 Three questions organize the analysis:
 
 1. Is India's recent growth in female labor force participation unusual in cross-country perspective, or does it merely appear large in isolation?
-2. Where does India's current *level* of female labor force participation sit relative to the rest of the world — a distinct question from its rate of change?
+2. Where does India's current *level* of female labor force participation sit relative to the rest of the world a distinct question from its rate of change?
 3. When survey respondents are asked to estimate India's FLFPR, how do their estimates compare not only to the "true" figure but to where that figure actually falls in the global distribution? And does correcting respondents' beliefs shift their stated attitudes?
 
 ## Data and methods
 
 Four data sources were combined.
 
-**Global panel.** Female labor force participation rates for 1990–2025, sourced from the International Labour Organization's Modelled Estimates series as distributed via the World Bank's World Development Indicators and processed for public distribution by Our World in Data (International Labour Organization 2026; World Bank 2026; Our World in Data 2026).<sup>[1](#fn1)</sup> The ILO modelled series harmonizes country-reported and statistically imputed values to a common definition (working-age population 15 and above, employed or unemployed) so that cross-country comparison is meaningful (International Labour Organization 2026). After excluding regional and income-group aggregates that are not individual countries — "World," "European Union (27)," "High-income countries," and seven similar groupings — the panel retains 181 countries with usable data for the comparison window used below.
+**Global panel.** Female labor force participation rates for 1990–2025, sourced from the International Labour Organization's Modelled Estimates series as distributed via the World Bank's World Development Indicators and processed for public distribution by Our World in Data (International Labour Organization 2026; World Bank 2026; Our World in Data 2026).<sup>[1](#fn1)</sup> The ILO modelled series harmonizes country-reported and statistically imputed values to a common definition (working-age population 15 and above, employed or unemployed) so that cross-country comparison is meaningful (International Labour Organization 2026). After excluding regional and income-group aggregates that are not individual countries "World," "European Union (27)," "High-income countries," and seven similar groupings the panel retains 181 countries with usable data for the comparison window used below.
 
-**India state panel.** State-by-sector female LFPR estimates for 2017-18 and 2022-23, drawn from a working paper's GAM-based analysis of Periodic Labour Force Survey (PLFS) microdata (Ravi and Kapoor 2024). This is a 12-row subset reported in the original paper's text and figures — the states the authors highlighted as showing the largest or most policy-relevant change — not an independently re-estimated full state panel.
+**India state panel.** State-by-sector female LFPR estimates for 2017-18 and 2022-23, drawn from a working paper's GAM-based analysis of Periodic Labour Force Survey (PLFS) microdata (Ravi and Kapoor 2024). This is a 12-row subset reported in the original paper's text and figures the states the authors highlighted as showing the largest or most policy-relevant change not an independently re-estimated full state panel.
 
 **South Asia comparator.** 2023–2024 FLFPR for India, Bangladesh, Pakistan, Sri Lanka, and Nepal, retrieved individually for each country from the same ILO/World Bank modelled-estimate series used in the global panel (World Bank 2026), ensuring all five countries are measured on one internally consistent scale.
 
 **Pilot survey.** Nine respondents were assigned to one of three arms: a control group; a group shown India's national FLFPR statistic; and a group asked to estimate the statistic before being shown the correct value. This pilot is a feasibility exercise, not a powered study, and its attitudinal results are reported with that caveat throughout.
 
-All computation was carried out in R using only base-R functions — `aov()` for analysis of variance, `t.test()` for pairwise comparisons, `cor.test()` for correlation, and base graphics for all figures — so the pipeline can be reproduced without installing any package.
+All computation was carried out in R using only base-R functions `aov()` for analysis of variance, `t.test()` for pairwise comparisons, `cor.test()` for correlation, and base graphics for all figures so the pipeline can be reproduced without installing any package.
 
 ---
 
@@ -52,9 +52,9 @@ This is a descriptive, not causal, finding: the analysis establishes that India'
 
 ## Finding 2: India's absolute level remains low in global terms
 
-Growth and level are distinct statistics, and the distinction matters here. On the same panel, India's 2023 FLFPR level sits at only the **11.5th percentile** worldwide — roughly 88% of countries in the panel have a higher female labor force participation rate than India, notwithstanding India's unusually rapid recent growth.
+Growth and level are distinct statistics, and the distinction matters here. On the same panel, India's 2023 FLFPR level sits at only the **11.5th percentile** worldwide roughly 88% of countries in the panel have a higher female labor force participation rate than India, notwithstanding India's unusually rapid recent growth.
 
-This is consistent with a standard "low base" pattern: rapid proportional growth from a low starting point need not close the gap with countries that started from a higher base. The same pattern appears domestically. Figure 3 shows that India's largest state-level gains in the PLFS-based data are concentrated in states — Nagaland, Arunachal Pradesh, Jharkhand — that began from very low rural female LFPR in 2017-18 (Ravi and Kapoor 2024).
+This is consistent with a standard "low base" pattern: rapid proportional growth from a low starting point need not close the gap with countries that started from a higher base. The same pattern appears domestically. Figure 3 shows that India's largest state-level gains in the PLFS-based data are concentrated in states Nagaland, Arunachal Pradesh, Jharkhand that began from very low rural female LFPR in 2017-18 (Ravi and Kapoor 2024).
 
 ![Rural female LFPR by Indian state, before and after](../figures/fig3_state_panel_before_after.png)
 
@@ -76,7 +76,7 @@ The pilot's third arm asked respondents to estimate India's FLFPR before being s
 | C02 | 30% | 31.24% | 10.4 | 11.5 |
 | C03 | 35% | 31.24% | 13.1 | 11.5 |
 
-The result is not a large misperception. Benchmarked against the World Bank/ILO comparator, respondents' guesses placed India almost exactly where it actually falls in the global distribution. Their apparent intuition — that India has comparatively low female labor force participation, though not the lowest in the world — is well calibrated against this particular data source.
+The result is not a large misperception. Benchmarked against the World Bank/ILO comparator, respondents' guesses placed India almost exactly where it actually falls in the global distribution. Their apparent intuition that India has comparatively low female labor force participation, though not the lowest in the world is well calibrated against this particular data source.
 
 ![Where pilot respondents' guesses fell relative to the true value, against the backdrop of the full global distribution](../figures/fig5_pilot_vs_global_relationship.png)
 
@@ -86,7 +86,7 @@ This conclusion is sensitive to the choice of benchmark. India's own PLFS nation
 
 ## Discussion
 
-Taken together, the three findings describe a country climbing quickly (97th percentile on growth) from a low starting point (11th percentile on level), in a way that is broadly consistent with how this small group of respondents intuitively ranked it — at least relative to one credible international series. The common intuition that "India still lags substantially in this area" is not, on this evidence, a misperception; it is approximately correct. The more genuine source of potential confusion is not cross-country ranking but the pace of domestic change, and the reconciliation of India's own national statistics with internationally harmonized series that can diverge by ten percentage points or more for reasons of methodology rather than substance.
+Taken together, the three findings describe a country climbing quickly (97th percentile on growth) from a low starting point (11th percentile on level), in a way that is broadly consistent with how this small group of respondents intuitively ranked it at least relative to one credible international series. The common intuition that "India still lags substantially in this area" is not, on this evidence, a misperception; it is approximately correct. The more genuine source of potential confusion is not cross-country ranking but the pace of domestic change, and the reconciliation of India's own national statistics with internationally harmonized series that can diverge by ten percentage points or more for reasons of methodology rather than substance.
 
 ## Limitations
 
